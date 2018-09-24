@@ -1,9 +1,15 @@
+/**
+ * 
+ */
 package br.calculadora.interfaces;
+/**
+ * @author Danilo
+ *
+ */
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
-import application.Main;
 import br.calculadora.classes.Calculadora;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -14,7 +20,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
 public class TelaController implements Initializable{
-
+	
     @FXML
     private Button bu7;
 
@@ -77,6 +83,8 @@ public class TelaController implements Initializable{
     
     private Calculadora calc = null;
     private char c;
+    
+    
     @FXML
     private void botao0(ActionEvent event) {
     	Resultado.setText(Resultado.getText()+"0");
